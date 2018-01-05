@@ -1,7 +1,6 @@
 /* =============================================================================
    HTML5 CSS Reset Minified - Eric Meyer
    ========================================================================== */
-
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
 body{line-height:1}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
@@ -16,81 +15,87 @@ table{border-collapse:collapse;border-spacing:0}
 hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
 input,select{vertical-align:middle}
 li{list-style:none}
-
-
 /* =============================================================================
    My CSS
    ========================================================================== */
-
 /* ---- base ---- */
-
 html,body{ 
 	width:100%;
 	height:100%;
 	background:#111;
 }
-
 html{
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
 body{
   font:normal 75% Arial, Helvetica, sans-serif;
 }
-
-canvas{
-  display:block;
-  vertical-align:bottom;
+.clear{
+  clear: both;
 }
-
-
-/* ---- stats.js ---- */
-
-.count-particles{
-  background: #000022;
-  position: absolute;
-  top: 48px;
-  left: 0;
-  width: 80px;
-  color: #13E8E9;
-  font-size: .8em;
-  text-align: left;
-  text-indent: 4px;
-  line-height: 14px;
-  padding-bottom: 2px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
-}
-
-.js-count-particles{
-  font-size: 1.1em;
-}
-
-#stats,
-.count-particles{
-  -webkit-user-select: none;
-  margin-top: 5px;
-  margin-left: 5px;
-}
-
-#stats{
-  border-radius: 3px 3px 0 0;
-  overflow: hidden;
-}
-
-.count-particles{
-  border-radius: 0 0 3px 3px;
-}
-
-
-/* ---- particles.js container ---- */
-
+/*** PARTICLES CONTAINER ***/
 #particles-js{
-  width: 100%;
-  height: 100%;
-  background-color: #0c0102;
-  background-image: url('');
+  background: radial-gradient(ellipse at center, #0a2e38 0%, #000000d0 70%);
+  position: relative;
+  background-image: url('https://coincrowd.it/coincrowd-bg.jpg');
   background-size: cover;
-  background-position: 50% 50%;
   background-repeat: no-repeat;
+  min-height: 500px;
+}
+/**** HOVER CONTAINER ****/
+#hover-container{
+  text-align: center;
+  color: white;
+  position: absolute;
+  bottom: 40px;
+  z-index: 1;
+  background: radial-gradient(ellipse at center, #0a2e38 0%, #000000d0 70%);
+}
+/******/
+h2 {
+  margin: 20px;
+}
+#demo{
+    margin-bottom: 20px;
+}
+.progress-bar.progress-bar-striped.active {
+  background-color: rgb(5, 124, 145);
+}
+#myBar p {
+  margin: 0px;
+}
+div#myProgress {
+  padding: 0px;
+}
+span,
+#daymonth,
+#expired {
+  box-sizing: border-box;
+  text-align: center;
+  color: #daf6ff;
+  text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
+}
+span {
+  font-size: 30px;
+  margin: 5px;
+  padding: 1px;
+}
+#daymonth {
+  font-size: 30px;
+ margin: 2px;
+}
+#expired {
+  font-size: 20px;
+ margin: 20px;
+}
+button.btn {
+  margin: 20px;
+  background-color: rgb(5, 124, 145);
+}
+button.btn a {
+  text-decoration: none;
+  color: white;
+}
+button.btn:hover {
+  background-color: rgb(6, 147, 172);
 }
