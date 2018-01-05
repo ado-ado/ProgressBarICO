@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {},
-  "author": "Dario Sechi",
+  "author": "Dario Sechi && Adolfini Asmaeli",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.0.0-beta.3",
