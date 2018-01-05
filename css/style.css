@@ -19,6 +19,15 @@ body {
     height: 100%;
 }
 
+canvas {
+    z-index: 0;
+}
+
+.btn {
+    position: relative;
+    z-index: 2;
+}
+
 .table-row {
     display: table-row;
 }
