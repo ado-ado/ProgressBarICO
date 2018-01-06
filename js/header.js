@@ -31,6 +31,6 @@ function animatedProgress() {
 function updateTime() {
     setInterval(() => {
         let time = new Date(dateEnd - new Date(Date.now()));
-        $("#time").html(time.toLocaleTimeString());
+        $("#time").html(time.getDay() + " Days & " + time.toLocaleTimeString());
     }, 1000)
 }
