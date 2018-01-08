@@ -8,6 +8,7 @@ body {
     background-image: url("../res/bg.jpg");
     background-size: cover;
     background-position: center center;
+    text-align: center;
 }
 
 .background {
@@ -29,6 +30,9 @@ canvas {
     z-index: 2;
 }
 
+.ma {
+    margin: auto;
+}
 
 .jumbotron {
     text-align: center;
@@ -36,4 +40,8 @@ canvas {
     border-radius: 0;
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 20px black;
+}
+
+.progress{
+    height: 30px;
 }
